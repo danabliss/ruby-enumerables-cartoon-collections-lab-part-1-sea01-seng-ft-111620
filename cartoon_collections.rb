@@ -1,11 +1,7 @@
 def greet_characters(array)
-  array.each do |item|
-    puts "Hello #{item}!"
-  end
+  array.each{|name| puts "Hello #{name}!"}
 end
 
 def list_dwarves(array)
-  array.each_with_index do |item, index|
-    puts "#{index+1}. #{item}"
-  end
-end
+  array.each_with_index{|name, i| puts "#{i+1}. #{name}"}
+end  
